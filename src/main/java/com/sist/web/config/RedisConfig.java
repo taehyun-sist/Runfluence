@@ -10,16 +10,19 @@ import io.lettuce.core.api.sync.RedisCommands;
 
 @Configuration
 public class RedisConfig {
+
     @Value("#{env['redis.host']}")
     private String host;
 
     @Value("#{env['redis.port']}")
     private String port;
 
-    // RedisClient 빈 생성
+    // RedisClient 빈 생성 (비밀번호 없이 접속)
     @Bean
     public RedisClient redisClient() {
-        return RedisClient.create("redis://" + host + ":" + port);
+        // 비밀번호를 포함하지 않은 Redis URI 생성
+        String redisUri = "redis://" + host + ":" + port;
+        return RedisClient.create(redisUri);
     }
 
     // RedisConnection 빈 생성
