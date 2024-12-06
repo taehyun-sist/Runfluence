@@ -35,36 +35,12 @@
 
     <!-- Header Section Begin -->
     <header class="header-section">
-        <div class="container-fluid">
+        <div class="container-fluid" style="display: flex; align-items: center;">
             <div class="logo">
                 <a href="/index">
-                    <img src="resources/index/img/logo11.png" alt="">
+                    <img src="resources/index/img/logo.png" alt="">
                 </a>
             </div>
-            <div class="top-social">
-                <a href="javascript:void(0)">
-                  <i id="menuButton"><p style="font-size:1.3rem;">&#128095;</p></i>
-                </a>
-            </div>
-              
-              <!-- 모달 -->
-              <div id="menuModal" class="modal">
-                <div class="modal-content">
-                  <span class="close-btn">&times;</span>
-                  <h2>메뉴</h2>
-                  <ul>
-                    <li>마이페이지</li>
-                    <li>위시리스트</li>
-                    <li>고객지원</li>
-                    <li>언어 
-                      <span class="language-option">한국어 🇰🇷</span>
-                    </li>
-                  </ul>
-                  <button class="login-btn">로그인</button>
-                  <a href="#" class="signup-link">회원가입</a>
-                </div>
-              </div>
-
             <div class="container">
                 <div class="nav-menu">
                     <nav class="mainmenu mobile-menu">
@@ -84,6 +60,26 @@
                     </nav>
                 </div>
             </div>
+            <div class="top-social">
+                <a href="javascript:void(0)">
+                  <i id="menuButton"><p style="font-size:1.3rem; margin:0;">&#128095;</p></i>
+                </a>
+            </div>
+              
+              <!-- 모달 -->
+              <div id="menuModal" class="modal">
+                <div class="modal-content">
+                  <span class="close-btn">&times;</span>
+                  <h2>메뉴</h2>
+                  <ul>
+                    <li><a href="/user/myPage">마이페이지</a></li>
+                    <li><a href="/shop/wish">위시리스트</a></li>
+                    <li><a href="/">고객지원</a></li>
+                  </ul>
+                  <button class="login-btn" onclick="location.href='/user/login'">로그인</button>
+                  <a href="/user/regForm" class="signup-link">회원가입</a>
+                </div>
+              </div>
             <div id="mobile-menu-wrap"></div>
         </div>
     </header>
@@ -408,20 +404,20 @@
 
 <!-- Footer Section Begin -->
 <footer class="footer-section">
-    <div class="container">
-        <div class="footer-content">
-            <!-- Footer Widget -->
-            <div class="footer-widget">
-                <img src="resources/index/img/logo11.png" alt="" style="padding-top: 13px; width: 150px;" >
-                <ul class="footer-info">
-                    <li><i class="fa fa-phone"></i><span>Phone: (02)336 8546</span></li>
-                    <li><i class="fa fa-envelope-o"></i><span>Email: Running.info@gmail.com</span></li>
-                    <li><i class="fa fa-map-marker"></i><span>Address: 서울특별시 마포구 서교동 447-5 풍성빌딩 2층</span></li>
-                </ul>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Widget -->
+                <div class="footer-widget">
+                    <img src="/resources/index/img/logo.png" alt="" style="width: 150px;" >
+                    <ul class="footer-info">
+                        <li><i class="fa fa-phone" text-primary mr-3"></i><span>Phone: (02)336 8546</span></li>
+                        <li><i class="fa fa-envelope text-primary mr-3"></i><span>Email: Running.info@gmail.com</span></li>
+                        <li><i class="fa fa-map-marker text-primary mr-3"></i><span>Address: 서울특별시 마포구 서교동 447-5 풍성빌딩 2층</span></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 <!-- Footer Section End -->
 
 

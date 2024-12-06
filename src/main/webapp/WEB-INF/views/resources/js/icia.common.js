@@ -4,11 +4,12 @@
  * 버전   : 1.0.1
  * 작성자 : daekk
  * 설명   : 자바 스크립트 공통모듈
- * 사용법 : jQuery 선언 되어야 함.
+ * 사용법 : jQuery 선언뒤에 선언 되어야 함.
+ *                   
  */
 
 // console 객체 지원하지 않는 브라우저 오류 방지 
-var console = window.console || { log: function() {}, clear: function() {}, error: function() {} };
+var console = window.console || { log: function() {}, error: function() {} };
 	
 var icia = (function(icia, undefined)
 {
@@ -26,14 +27,6 @@ var icia = (function(icia, undefined)
 				console.log(arguments[i]);
 			}	
 		}	
-	}
-	
-	/**
-	 * 콘솔창을 지운다.
-	 */
-	icia.common.clear = function()
-	{
-		console.clear();
 	}
 	
 	/**

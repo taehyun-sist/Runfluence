@@ -32,7 +32,7 @@
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Poppins", sans-serif;
+  --font-family-sans-serif: "JejuGothic", "Poppins", sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -42,10 +42,17 @@
   box-sizing: border-box;
 }
 
+@font-face {
+font-family: 'JejuGothic';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/JejuGothic.ttf') format('truetype');
+}
+
 .footer-section {
   background: #000000;
   padding: 40px 20px; /* 패딩 조정 */
-padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 .footer-content {
@@ -159,7 +166,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "JejuGothic", "Poppins", sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1351,14 +1358,14 @@ pre code {
   }
 
   .col-lg-3.d-none.d-lg-block {
-    flex: 0 0 20%;
-    max-width: 20%;
+    flex: 0 0 25%;
+    max-width: 25%;
   }
 
   .col-lg-3.col-6.text-right {
     display: flex;
-    flex: 0 0 30%;
-    max-width: 30%;
+    flex: 0 0 25%;
+    max-width: 25%;
     justify-content: flex-end;
   }
 
@@ -2550,11 +2557,12 @@ fieldset:disabled a.btn {
   box-shadow: 0 0 0 0.2rem rgba(206, 210, 223, 0.5);
 }
 
+/*
 .btn-secondary.disabled, .btn-secondary:disabled {
   color: #212529;
   background-color: #EDF1FF;
   border-color: #EDF1FF;
-}
+} */
 
 .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-secondary.dropdown-toggle {
@@ -3339,13 +3347,13 @@ input[type="button"].btn-block {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #6f6f6f;
 }
 
 .dropdown-item.active, .dropdown-item:active {
   color: #000;
   text-decoration: none;
-  background-color: #A1E5D6;
+  background-color: #6f6f6f;
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -3633,9 +3641,9 @@ input[type="button"].btn-block {
 }
 
 .custom-control-input:checked ~ .custom-control-label::before {
-  color: #fff;
-  border-color: #A1E5D6;
-  background-color: #A1E5D6;
+  color: #000;
+  border-color: #6f6f6f;
+  background-color: #6f6f6f;
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -4096,6 +4104,7 @@ input[type="button"].btn-block {
   border: 1px solid transparent;
 }
 
+
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
   border-color: #000 #000 #000; 
 }
@@ -4106,12 +4115,16 @@ input[type="button"].btn-block {
   border-color: transparent;
 }
 
+
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
   background-color: #fff;
   border-color: #000 #000 #fff;
 }
+
+
+/*내일 수정*/
 
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -4726,7 +4739,7 @@ input[type="button"].btn-block {
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
   line-height: 1.25;
-  color: #4f8efc;
+  color: #000;
   background-color: #fff;
   border: 1px solid #dee2e6;
 }
@@ -4735,7 +4748,7 @@ input[type="button"].btn-block {
   z-index: 2;
   color: #000;
   text-decoration: none;
-  background-color: #c7cdef;
+  background-color: #6f6f6f;
   border-color: #dee2e6;
 }
 
@@ -6298,7 +6311,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #FFFFFF !important;
+  background-color: #FFFFFF;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -9735,22 +9748,15 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-primary.px-3
 {
-  background-color: #A1E5D6 ;
-  border-color: transparent;
+  color: #fff;
+  background-color: #000;
   border-radius: 30px;
   height: 50px;
   width: 250px;
   margin-bottom: 20px;
 }
 .btn-primary.px-3:hover {
-  background-color: #76D7C4 !important;
-}
-
-.btn-primary.px-3:active{
-  background-color: #48C9B0 !important;
-  border: 2px solid #A1E5D6 !important; /* 포커스 상태에서 강조 테두리 */
-  outline: none; /* 기본 브라우저 outline 제거 */
-  box-shadow: 0 0 8px rgba(161, 229, 214, 0.8); /* 추가적인 강조 효과 */
+  background-color: #6F6F6F;
 }
 
 /* 색 후보 D0F6EE, #6DD1DE, #05DCF7 */
@@ -9760,8 +9766,14 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid #A1E5D6;
+  border: 1.5px solid #6f6f6f;
   background-color: transparent;
+  color: #000;
+}
+
+.btn-primary.px-3.heart-wish:hover {
+	background-color: #fff;
+	border-color: #000;
 }
 
 .nav-item.nav-link {
@@ -9792,7 +9804,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn-primary.py-2.px-4 {
-  background-color: #A1E5D6 ;
+  background-color: #000;
+  color: #fff;
   border-color: transparent;
   border-radius: 30px;
   height: 50px;
@@ -9801,14 +9814,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn-primary.py-2.px-4:hover {
-  background-color: #76D7C4 !important;
-}
-
-.btn-primary.py-2.px-4:active{
-  background-color: #48C9B0 !important;
-  border: 2px solid #A1E5D6 !important; /* 포커스 상태에서 강조 테두리 */
-  outline: none; /* 기본 브라우저 outline 제거 */
-  box-shadow: 0 0 8px rgba(161, 229, 214, 0.8); /* 추가적인 강조 효과 */
+  background-color: #6F6F6F !important;
 }
 
 .d-flex.align-items-center.mb-4.pt-2 {
@@ -9823,8 +9829,8 @@ a.text-dark:hover, a.text-dark:focus {
 
 .btn-primary.btn-minus 
 {
-  background-color: #A1E5D6; /* 버튼 배경색 */
-  color: white; /* 버튼 텍스트 색 */
+
+  color: #000; /* 버튼 텍스트 색 */
   border: none;
   border-radius: 50%; /* 둥근 버튼 */
   width: 40px; /* 버튼 크기 */
@@ -9835,24 +9841,17 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease; /* 스케일 효과 추가 */
 }
 
 .btn-primary.btn-minus:hover {
-  background-color: #76D7C4 !important;
-}
-
-.btn-primary.btn-minus:active{
-  background-color: #48C9B0 !important;
-  border: 2px solid #A1E5D6 !important; /* 포커스 상태에서 강조 테두리 */
-  outline: none; /* 기본 브라우저 outline 제거 */
-  box-shadow: 0 0 8px rgba(161, 229, 214, 0.8); /* 추가적인 강조 효과 */
+  background-color: transparent !important;
+  transform: scale(1.2); /* 크기를 20% 키움 */
 }
 
 .btn-primary.btn-plus 
 {
-  background-color: #A1E5D6; /* 버튼 배경색 */
-  color: white; /* 버튼 텍스트 색 */
+  color: #000; /* 버튼 텍스트 색 */
   border: none;
   border-radius: 50%; /* 둥근 버튼 */
   width: 40px; /* 버튼 크기 */
@@ -9867,14 +9866,8 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .btn-primary.btn-plus:hover {
-  background-color: #76D7C4 !important;
-}
-
-.btn-primary.btn-plus:active{
-  background-color: #48C9B0 !important;
-  border: 2px solid #A1E5D6 !important; /* 포커스 상태에서 강조 테두리 */
-  outline: none; /* 기본 브라우저 outline 제거 */
-  box-shadow: 0 0 8px rgba(161, 229, 214, 0.8); /* 추가적인 강조 효과 */
+  background-color: transparent !important;
+  transform: scale(1.2); /* 크기를 20% 키움 */
 }
 
 .btn.border {
@@ -9953,11 +9946,15 @@ a.text-dark:hover, a.text-dark:focus {
 .shop-modal-content .login-btn {
   width: 100%;
   padding: 10px 0;
-  background-color: #A1E5D6;
+  background-color: #000;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.shop-modal-content > .login-btn:hover {
+	background-color: #6f6f6f;
 }
 
 .shop-modal-content .signup-link {
@@ -9972,7 +9969,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   top: 10px;
   right: 10px;
-  font-size: 32px; /* 닫기 버튼 크기 */
+  font-size: 24px; /* 닫기 버튼 크기 */
   font-weight: bold;
   color: #333;
   cursor: pointer;
@@ -9983,6 +9980,20 @@ a.text-dark:hover, a.text-dark:focus {
 .shop-modal-content .close-btn:hover {
   color: red; /* 마우스 오버 시 빨간색 */
   transform: scale(1.1); /* 크기 확대 */
+}
+
+.shop-modal-content > .logout-btn {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.shop-modal-content > .logout-btn:hover {
+	background-color: #6f6f6f;
 }
 
 /*메뉴버튼 끝*/
@@ -10121,139 +10132,57 @@ ul.custom-navbar li a {
   color: red !important;
 }
 
+.text-primary.search {
+	color: #000 !important;
+}
+
+.text-primary.cart {
+	color: #000 !important;
+}
+
+.col-lg-3.col-6.text-right form {
+	margin-bottom: 0;
+	
+}
+
+
+
+.row.align-items-center.py-3.px-xl-5 {
+	background-color: #fff;
+}
+
 /*====================================================================================================*/
 
-.container-fluid.pt-4 {
-  padding: 15px; /* 안쪽 여백 */
-  border-radius: 10px; /* 모서리 둥글게 */
-  margin-top: 20px; /* 위쪽 여백 */
-}
-.summary-container {
-  background: #f8f9fa; /* 밝은 배경색 */
-  padding: 20px; /* 안쪽 여백 */
-  border-radius: 20px; /* 둥근 모서리 */
-  margin-top: 20px; /* 위쪽 여백 */
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+/* Custom styles for the dropdown */
+.custom-dropdown {
+    background-color: #f8f9fa; /* 배경색 */
+    border: 2px solid #007bff; /* 테두리 색 */
+    border-radius: 8px; /* 둥근 모서리 */
+    padding: 8px 12px; /* 안쪽 여백 */
+    font-size: 16px; /* 글자 크기 */
+    color: #495057; /* 글자 색 */
+    width: auto;
+    max-width: 250px; /* 최대 너비 설정 */
+    cursor: pointer;
 }
 
-.summary-text {
-  font-size: 16px;
-  font-weight: bold;
+.custom-dropdown:focus {
+    border-color: #0056b3; /* 포커스 시 테두리 색 */
+    box-shadow: 0 0 0 0.25rem rgba(38, 143, 255, 0.5); /* 포커스 시 그림자 */
 }
 
-.btn.btn-secondary.rounded-btn {
-  border-radius: 20px; /* 버튼 끝을 둥글게 */
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 14px; 
-  font-weight: bold; 
-  background-color: #f8f9fa; 
-  color: #333; 
-  border: 1px solid #ccc; 
-  cursor: pointer;
-  transition: background-color 0.3s; 
+.custom-dropdown option {
+    padding: 10px; /* 옵션 항목에 여백 추가 */
+    background-color: #ffffff;
+    color: #495057;
 }
 
-
-/* 장바구니-결제  */
-.summary-container {
-background: #f8f9fa;
-padding: 20px;
-border-radius: 30px; /* 둥근 모서리 */
-margin-top: 20px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
+.custom-dropdown option:hover {
+    background-color: #e9ecef; /* 옵션 항목 호버 효과 */
 }
 
-/* 버튼 그룹 스타일 */
-.button-group {
-display: flex;
-margin-top: 20px;
-gap: 10px; /* 버튼 간격 */
-justify-content: flex-end; /* 오른쪽 정렬 */
-}
-
-/* 버튼 공통 스타일 */
-.action-btn {
-padding: 10px 20px;
-border-radius: 20px;
-font-size: 14px;
-font-weight: bold;
-background-color: #e0e0e0; /* 연한 회색 */
-border: none;
-color: #333;
-margin-top: 20px;
-margin-left: 10px;
-}
-
-.action-btn:hover {
-background-color: #d6d6d6; 
-}
-
-/* 주문 버튼  */
-.order-btn {
-padding: 10px 20px;
-border-radius: 20px;
-font-size: 14px;
-font-weight: bold;
-}
-
-.btn.btn-outline-dark.order-btn {
-border: 2px solid #6c757d;
-color: #6c757d;
-background-color: #fff;
-}
-
-.btn.btn-outline-dark.order-btn:hover {
-background-color: #6c757d;
-color: #fff;
-}
-
-.btn-primary {
-background-color: #A1E5D6;  
-border: none;
-}
-
-.btn-primary:hover {
-background-color: #76D7C4;
-}
-
-/* 쇼핑 계속하기 버튼  */
-.continue-btn {
-padding: 10px 20px;
-border-radius: 20px;
-font-size: 14px;
-}
-
-.btn.btn-secondary.rounded-btn:hover {
-background-color: #e0e0e0; 
-}
-
-.table.table-bordered.text-center.mb-0 {
-  border-collapse: collapse;
-  table-layout: auto; /* 칸 크기를 내용물에 맞게 조정 */
-  width: 100%; /* 테이블 전체 너비 */
-}
-
-/* 이미지가 들어가는 열의 셀 */
-.align-middle > tr > td img {
-  display: block;
-  max-width: 100%; /* 이미지가 셀 너비를 넘지 않도록 */
-  height: auto; /* 이미지 비율 유지 */
-  margin: auto; /* 이미지 가운데 정렬 */
-}
-
-/* 이미지 열 스타일 */
-.align-middle > tr > td {
-  vertical-align: middle; /* 내용 중간 정렬 */
-}
-
-/* 특정 열에 맞춰 자동 조정 */
-.align-middle > tr > td:nth-child(2) {
-  width: 120px; /* 제품 사진 열의 너비 */
+.form-select.border {
+	height: 35px;
+    border-radius: 10px;
+    padding:5px;
 }

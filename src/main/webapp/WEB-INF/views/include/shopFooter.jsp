@@ -7,7 +7,7 @@
             <div class="footer-content">
                 <!-- Footer Widget -->
                 <div class="footer-widget">
-                    <img src="/resources/shop/img/logo11.png" alt="" style="padding-top: 13px; width: 150px;" >
+                    <img src="/resources/index/img/logo.png" alt="" style="width: 150px;" >
                     <ul class="footer-info">
                         <li><i class="fa fa-phone-alt text-primary mr-3"></i><span>Phone: (02)336 8546</span></li>
                         <li><i class="fa fa-envelope text-primary mr-3"></i><span>Email: Running.info@gmail.com</span></li>
@@ -23,6 +23,7 @@
     <a href="#" class="btn btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
     <!-- 모달 -->
+
     <div id="shop-menuModal" class="shop-modal">
         <div class="shop-modal-content">
           <div class="shop-modal-header">
@@ -30,14 +31,17 @@
             <span class="close-btn">&times;</span>
           </div>
           <ul>
-            <li><a href="./mypage">마이페이지</a></li>
-            <li><a href="./wish">위시리스트</a></li>
-            <li><a href="./contact">고객지원</a></li>
+            <li><a href="/user/myPage">마이페이지</a></li>
+            <li><a href="./wish.html">위시리스트</a></li>
+            <li><a href="./contact.html">고객지원</a></li>
           </ul>
-          <button class="login-btn" onclick="">로그인</button>
-          <a href="#" class="signup-link">회원가입</a>
+         
+        <button class="login-btn" onclick="location.href='/user/login'">로그인</button>
+        <!-- <button class="logout-btn">로그아웃</button> -->
+        <a href="#" class="signup-link" onclick="location.href='/user/regForm'">회원가입</a>
         </div>
       </div>
+
     <!--모달끝-->
 
     <!-- JavaScript Libraries -->

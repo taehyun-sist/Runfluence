@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.sist.web.dao.ProdDao">
+
+	<resultMap type="com.sist.web.model.Prod" id="prodResultMap">
+	    <id property="prodId" column="PROD_ID" />
+	    <result property="prodSubCateCombinedId" column="PROD_SUB_CATE_COMBINED_ID" />
+	    <result property="prodName" column="PROD_NAME" />
+	    <result property="prodPrice" column="PROD_PRICE" />
+	    <result property="prodDiscountPercent" column="PROD_DISCOUNT_PERCENT" />
+	    <result property="prodInfo" column="PROD_INFO" />
+	    <result property="prodStatus" column="PROD_STATUS" />
+	    <result property="regDate" column="REG_DATE" />
+	</resultMap>
+	
+	<select id="prodList" parameterType="com.sist.web.model.Prod" resultMap="prodResultMap">
+		SELECT
+		    PROD_ID,
+		    PROD_SUB_CATE_COMBINED_ID,
+		    PROD_NAME,
+		    PROD_PRICE,
+		    PROD_DISCOUNT_PERCENT,
+		    PROD_INFO,
+		    PROD_STATUS,
+		    REG_DATE
+		FROM (
+		    SELECT
+		        ROWNUM RNUM,
+		        PROD_ID,
+		        PROD_SUB_CATE_COMBINED_ID,
+		        PROD_NAME,
+		        PROD_PRICE,
+		        PROD_DISCOUNT_PERCENT,
+		        PROD_INFO,
+		        PROD_STATUS,
+		        REG_DATE
+		    FROM (   
+		        SELECT
+		            PROD_ID,
+		            NVL(PROD_SUB_CATE_COMBINED_ID, '') PROD_SUB_CATE_COMBINED_ID,
+		            NVL(PROD_NAME, '') PROD_NAME,
+		            NVL(PROD_PRICE, 0) PROD_PRICE,
+		            NVL(PROD_DISCOUNT_PERCENT, 0) PROD_DISCOUNT_PERCENT,
+		            NVL(PROD_INFO, '') PROD_INFO,
+		            NVL(PROD_STATUS, '') PROD_STATUS,
+		            NVL(REG_DATE, '') REG_DATE
+		        FROM
+		            PROD
+		        ORDER BY PROD_ID DESC))
+		WHERE
+		    RNUM <![CDATA[ >= ]]> #{startRow}
+			AND RNUM <![CDATA[ <= ]]> #{endRow}
+	</select>
+	
+	<select id="prodListCount" parameterType="com.sist.web.model.Prod" resultType="long">
+		SELECT COUNT(PROD_ID) AS PROD_ID
+		FROM PROD
+	</select>
+
+</mapper>

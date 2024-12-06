@@ -148,7 +148,7 @@
                         </div>
                     </div>
                     <button class="btn btn-primary px-3"><i class="fa fa-shopping-cart mr-1"></i> 장바구니</button>
-                    <button class="btn btn-primary px-3 heart-wish"><i class="detail-heart bi-heart" style="font-size:20px; color: red; cursor: pointer;"></i>위시리스트</button>
+                    <button class="btn btn-primary px-3 heart-wish"><i class="detail-heart bi-heart" style="font-size:20px; color: red; cursor: pointer; padding-top:3px; padding-right:5px;"></i>위시리스트</button>
                 </div>
                 
             </div>

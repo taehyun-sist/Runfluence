@@ -75,7 +75,7 @@
             <div class="swiper-container nav-slider loading">
                 <div class="swiper-wrapper" role="navigation">
                   <div class="swiper-slide">
-                    <a href="./shop">
+                    <a href="/shop/shopList">
                         <figure class="slide-bgimg" style="background-image:url('/resources/shop/img/mainShoes.jpg')">
                             <img src="/resources/shop/img/mainShoes.jpg" class="entity-img" />
                         </figure>                    
@@ -85,7 +85,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="./shop">
+                    <a href="/shop/shopList">
                         <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
                         <img src="https://images.unsplash.com/photo-1500643752441-4dc90cda350a?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
                         </figure>
@@ -95,7 +95,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="./shop">
+                    <a href="/shop/shopList">
                         <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85)">
                         <img src="https://images.unsplash.com/photo-1465408953385-7c4627c29435?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTg2Ng&ixlib=rb-1.2.1&q=85" class="entity-img" />
                         </figure>
@@ -105,7 +105,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="./shop">
+                    <a href="/shop/shopList">
                         <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85)">
                         <img src="https://images.unsplash.com/photo-1538329972958-465d6d2144ed?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTkzNg&ixlib=rb-1.2.1&q=85" class="entity-img" />
                         </figure>
@@ -115,7 +115,7 @@
                     </a>
                   </div>
                   <div class="swiper-slide">
-                    <a href="./shop">
+                    <a href="/shop/shopList">
                         <figure class="slide-bgimg" style="background-image:url(https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85)">
                         <img src="https://images.unsplash.com/photo-1583292650898-7d22cd27ca6f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0MDE1NTk1OQ&ixlib=rb-1.2.1&q=85" class="entity-img" />
                         </figure>
